@@ -6,10 +6,15 @@
         body { font-family: sans-serif; }
         input[type=text] { width: 200px; padding: 8px; }
         button { padding: 8px 15px; background-color: lightblue; cursor: pointer; }
+        sup {
+            vertical-align: super;
+            font-size: smaller;
+            line-height: 0; /* Prevent extra line height issues */
+        }
     </style>
 </head>
 <body>
-    <h1>DFA for a^n b^(2n+1)</h1>
+    <h1>DFA for L = {a<sup>n</sup>b<sup>2n + 1</sup> : n ≥ 0}</h1>
 
     <form method="POST" id="dfaForm">
         <input type="text" name="inputString" placeholder="Enter a string (a's and b's)" />
